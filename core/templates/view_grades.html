@@ -1,0 +1,17 @@
+<h2>Grades</h2>
+<table border="1">
+    <tr>
+        <th>Student</th>
+        <th>Subject</th>
+        <th>Marks</th>
+        <th>Date</th>
+    </tr>
+    {% for grade in grades %}
+    <tr>
+        <td>{{ grade.student.name }}</td>
+        <td>{{ grade.subject }}</td>
+        <td>{{ grade.marks }}</td>
+        <td>{{ grade.date_recorded }}</td>
+    </tr>
+    {% endfor %}
+</table>
