@@ -2,7 +2,10 @@ from django.shortcuts import render, redirect
 from .forms import StudentForm
 from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import render, redirect
+from django.shortcuts import render
 
+def home(request):
+    return render(request, 'home.html')
 def user_login(request):
     if request.method == 'POST':
         username = request.POST['username']

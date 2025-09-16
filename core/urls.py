@@ -2,6 +2,9 @@ from django.urls import path
 from . import views
 from django.http import HttpResponse
 
+from django.urls import path
+from .views import home
+
 
 def home(request):
     return HttpResponse("Welcome to College Management System!")
