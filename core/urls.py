@@ -1,16 +1,8 @@
 from django.urls import path
 from . import views
-from django.http import HttpResponse
-
-from django.urls import path
-from .views import home
-
-
-def home(request):
-    return HttpResponse("Welcome to College Management System!")
 
 urlpatterns = [
-    path('', home),
+    path('', views.home, name='home'),
     path('register/', views.register_student, name='register_student'),
     path('success/', views.student_success, name='student_success'),
     path('login/', views.user_login, name='login'),
@@ -21,6 +13,4 @@ urlpatterns = [
     path('mark-attendance/', views.mark_attendance, name='mark_attendance'),
     path('enter-grade/', views.enter_grade, name='enter_grade'),
     path('view-grades/', views.view_grades, name='view_grades'),
-
 ]
-
