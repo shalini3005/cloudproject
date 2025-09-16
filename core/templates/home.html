@@ -5,6 +5,16 @@
 </head>
 <body>
     <h1>Welcome to College Management System!</h1>
-    <p>This is your live Django project deployed on Render.</p>
+    <ul>
+        <li><a href="{% url 'login' %}">Login</a></li>
+        <li><a href="{% url 'register_student' %}">Register Student</a></li>
+        <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
+        <li><a href="{% url 'view_grades' %}">View Grades</a></li>
+        <li><a href="{% url 'mark_attendance' %}">Mark Attendance</a></li>
+        <li><a href="{% url 'enter_grade' %}">Enter Grade</a></li>
+        <li><a href="{% url 'add_student' %}">Add Student</a></li>
+        <li><a href="{% url 'add_staff' %}">Add Staff</a></li>
+        <li><a href="{% url 'logout' %}">Logout</a></li>
+    </ul>
 </body>
 </html>
